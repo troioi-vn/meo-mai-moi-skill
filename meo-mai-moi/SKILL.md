@@ -1,11 +1,11 @@
 ---
 name: meo-mai-moi
-description: Use for tasks involving the Meo Mai Moi platform, especially when an agent needs to read or update pets, weights, vaccinations, medical records, microchips, helper profiles, or placement workflows through the documented API. Also use when the user asks how to authenticate to Meo Mai Moi, how to structure API calls, or how to safely automate pet-management actions.
+description: "Use for Meo Mai Moi pet-owner tasks when an agent needs to help a user manage their pets through the documented API: listing pets, updating pet profiles, adding weights, vaccinations, medical records, or microchips, understanding helper profiles, or navigating placement workflows. Also use when the user asks how to authenticate to Meo Mai Moi, how to install or configure this skill, which prompts to give their agent, or how to safely automate day-to-day pet-management actions without guessing undocumented routes."
 ---
 
 # Meo Mai Moi
 
-Use the Meo Mai Moi API deliberately. Prefer documented `/api/*` endpoints and avoid inventing routes or payload fields.
+Use this skill for user-facing pet-management help on Meo Mai Moi. Prefer documented `/api/*` endpoints and avoid inventing routes or payload fields.
 
 ## Load the right reference
 
@@ -14,6 +14,7 @@ Read only the reference file you need:
 - Read `references/api.md` for authentication, response format, documented endpoints, and API usage rules.
 - Read `references/domain-model.md` for pet, helper, relationship, and placement concepts.
 - Read `references/workflows.md` for task playbooks and safe execution patterns.
+- Read `references/examples.md` when the user asks how to install the skill, configure token loading, or phrase requests to their agent.
 
 ## Working rules
 
@@ -35,3 +36,4 @@ When helping with Meo Mai Moi tasks:
 - Surface important constraints before risky writes.
 - If the contract looks incomplete for the requested task, say so plainly and stop guessing.
 - Prefer compact examples over long tutorials.
+- Default to the pet owner's perspective unless the user clearly asks for developer or backend-contract analysis.
