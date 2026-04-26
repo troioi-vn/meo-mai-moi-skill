@@ -47,7 +47,7 @@ These are good natural-language triggers for the skill:
 
 - "List my pets from Meo Mai Moi."
 - "Show me the current profile for Miu on Meo Mai Moi."
-- "Add a new weight entry for Bánh Bao: 4.3kg today."
+- "Add a new weight entry for Bánh Bao: 4.3kg today." (Agent should call the live API with `weight_kg` and `record_date`.)
 - "Update this pet's description but keep everything else unchanged."
 - "Check whether my Meo Mai Moi API key still works."
 - "Explain what helper profiles are on Meo Mai Moi."
@@ -60,6 +60,7 @@ Good behavior:
 
 - Read current state first.
 - Use documented routes.
+- Match payload field names to the verified live contract, especially for nested health records.
 - Confirm destructive actions.
 - Re-read after writes.
 - Explain state transitions for placement tasks.

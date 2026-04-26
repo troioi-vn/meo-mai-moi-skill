@@ -155,6 +155,8 @@ curl -sS -X POST \
   -H "Authorization: Bearer $API_KEY" \
   -H "Accept: application/json" \
   -H "Content-Type: application/json" \
-  -d '{"weight":4.2,"recorded_at":"2026-04-26"}' \
+  -d '{"weight_kg":4.2,"record_date":"2026-04-26"}' \
   https://meo-mai-moi.com/api/pets/123/weights
 ```
+
+The live API currently validates `weight_kg` and `record_date` for weight writes. Do not send `weight` or `recorded_at` unless the server contract changes and you re-verify it.
