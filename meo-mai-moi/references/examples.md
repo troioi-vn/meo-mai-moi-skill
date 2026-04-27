@@ -29,17 +29,21 @@ openclaw skills list
 openclaw agent --message "List my Meo Mai Moi pets"
 ```
 
-## Token setup
+## Connect your agent with an API key
 
-Store the Meo Mai Moi PAT in a local env file outside git.
+To use Meo Mai Moi through an agent, sign in to Meo Mai Moi, create a personal API key/token, and provide that key to your agent securely.
+
+Recommended setup: store the Meo Mai Moi API key in a local env file outside git.
 
 Example:
 
 ```env
-API_KEY=your_pat_here
+API_KEY=your_api_key_here
 ```
 
-The agent should load it from a local env file and never commit or echo the token back into chat unless the user explicitly asks to reveal it.
+The agent should load it from a local env file or secret manager and never commit it, log it, paste it into public chats, or echo it back unless the user explicitly asks to reveal it.
+
+Without this key, the agent can understand the skill documentation but cannot access the user's Meo Mai Moi pets or account data.
 
 ## Example user prompts
 

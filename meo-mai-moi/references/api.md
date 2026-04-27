@@ -4,6 +4,8 @@
 
 Use Sanctum personal access tokens for programmatic access.
 
+To start using Meo Mai Moi through an agent, the user must create a personal API key/token in their Meo Mai Moi account and provide it to the agent securely, preferably through a local env file or secret manager. Do not ask users to paste API keys into public chats, shared prompts, GitHub issues, logs, or committed files.
+
 Required headers:
 
 - `Authorization: Bearer <token>`

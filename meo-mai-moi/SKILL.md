@@ -7,6 +7,12 @@ description: "Use for Meo Mai Moi pet-owner tasks when an agent needs to help a 
 
 Use this skill for user-facing pet-management help on Meo Mai Moi. Prefer documented `/api/*` endpoints and avoid inventing routes or payload fields.
 
+## Required user setup
+
+Before an agent can use Meo Mai Moi for a user, the user must have a Meo Mai Moi account and create a personal API key/token in the app. The user should provide that key to their agent securely, ideally as a local secret or environment variable, not by pasting it into public chats, shared prompts, GitHub issues, logs, or commits.
+
+Without this API key, the agent cannot access the user's pets or account data through the API.
+
 ## Load the right reference
 
 Read only the reference file you need:
