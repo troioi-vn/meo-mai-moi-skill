@@ -9,9 +9,19 @@ Use this skill for user-facing pet-management help on Meo Mai Moi. Prefer docume
 
 ## Required user setup
 
-Before an agent can use Meo Mai Moi for a user, the user must have a Meo Mai Moi account and create a personal API key/token in the app. The user should provide that key to their agent securely, ideally as a local secret or environment variable, not by pasting it into public chats, shared prompts, GitHub issues, logs, or commits.
+Meo Mai Moi is hosted at https://meo-mai-moi.com. Before an agent can use Meo Mai Moi for a user, the user must manually sign in or register there, then create a personal API key/token at https://meo-mai-moi.com/developer.
+
+The user should provide that key to their agent securely, ideally as a local secret or environment variable, not by pasting it into public chats, shared prompts, GitHub issues, logs, or commits.
 
 Without this API key, the agent cannot access the user's pets or account data through the API.
+
+Useful official links:
+
+- App: https://meo-mai-moi.com
+- API token page: https://meo-mai-moi.com/developer
+- Docs: https://meo-mai-moi.com/docs
+- API integration guide: https://meo-mai-moi.com/docs/api-integration.html
+- Project page: https://project.meo-mai-moi.com
 
 ## Load the right reference
 

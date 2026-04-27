@@ -31,7 +31,13 @@ openclaw agent --message "List my Meo Mai Moi pets"
 
 ## Connect your agent with an API key
 
-To use Meo Mai Moi through an agent, sign in to Meo Mai Moi, create a personal API key/token, and provide that key to your agent securely.
+Meo Mai Moi is hosted at https://meo-mai-moi.com.
+
+To use Meo Mai Moi through an agent:
+
+1. Sign in or register manually at https://meo-mai-moi.com.
+2. Create a personal API key/token at https://meo-mai-moi.com/developer.
+3. Provide that key to your agent securely.
 
 Recommended setup: store the Meo Mai Moi API key in a local env file outside git.
 
@@ -44,6 +50,14 @@ API_KEY=your_api_key_here
 The agent should load it from a local env file or secret manager and never commit it, log it, paste it into public chats, or echo it back unless the user explicitly asks to reveal it.
 
 Without this key, the agent can understand the skill documentation but cannot access the user's Meo Mai Moi pets or account data.
+
+Useful links:
+
+- App: https://meo-mai-moi.com
+- API token page: https://meo-mai-moi.com/developer
+- Docs: https://meo-mai-moi.com/docs
+- API integration guide: https://meo-mai-moi.com/docs/api-integration.html
+- Project page: https://project.meo-mai-moi.com
 
 ## Example user prompts
 
